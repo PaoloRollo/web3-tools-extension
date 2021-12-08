@@ -65,9 +65,9 @@ const Favorites = () => {
             <ul role="list" className="divide-y divide-gray-200">
                 {value.map((v, index) => (
                     <li key={index} className="py-4 flex justify-between items-center">
-                        <div>
-                            <p className="text-sm font-medium text-gray-900">{v.key}</p>
-                            <p className="text-sm text-gray-500">{v.value}</p>
+                        <div className="truncate">
+                            <p className="text-sm font-medium text-gray-900 truncate">{v.key}</p>
+                            <p className="text-sm text-gray-500 truncate">{v.value}</p>
                         </div>
                         <div className="flex">
 
